@@ -1,0 +1,579 @@
+Country,Country/Territory Code,State/Province,State Code
+Australia,AU,Australian Capital Territory,ACT
+Australia,AU,New South Wales,NSW
+Australia,AU,Northern Territory,NT
+Australia,AU,Queensland,QLD
+Australia,AU,South Australia,SA
+Australia,AU,Tasmania,TAS
+Australia,AU,Victoria,VIC
+Australia,AU,Western Australia,WA
+Brazil,BR,Acre,AC
+Brazil,BR,Alagoas,AL
+Brazil,BR,Amazonas,AM
+Brazil,BR,Amapá,AP
+Brazil,BR,Bahia,BA
+Brazil,BR,Ceará,CE
+Brazil,BR,Distrito Federal,DF
+Brazil,BR,Espírito Santo,ES
+Brazil,BR,Goiás,GO
+Brazil,BR,Maranhão,MA
+Brazil,BR,Minas Gerais,MG
+Brazil,BR,Mato Grosso do Sul,MS
+Brazil,BR,Mato Grosso,MT
+Brazil,BR,Pará,PA
+Brazil,BR,Paraíba,PB
+Brazil,BR,Pernambuco,PE
+Brazil,BR,Piauí,PI
+Brazil,BR,Paraná,PR
+Brazil,BR,Rio de Janeiro,RJ
+Brazil,BR,Rio Grande do Norte,RN
+Brazil,BR,Rondônia,RO
+Brazil,BR,Roraima,RR
+Brazil,BR,Rio Grande do Sul,RS
+Brazil,BR,Santa Catarina,SC
+Brazil,BR,Sergipe,SE
+Brazil,BR,São Paulo,SP
+Brazil,BR,Tocantins,TO
+Canada ,CA,Alberta,AB
+Canada ,CA,British Columbia,BC
+Canada ,CA,Manitoba,MB
+Canada ,CA,New Brunswick,NB
+Canada ,CA,Newfoundland and Labrador,NL
+Canada ,CA,Nova Scotia,NS
+Canada ,CA,Northwest Territories,NT
+Canada ,CA,Nunavut,NU
+Canada ,CA,Ontario,ON
+Canada ,CA,Prince Edward Island,PE
+Canada ,CA,Quebec,QC
+Canada ,CA,Saskatchewan,SK
+Canada ,CA,Yukon Territories,YT
+China,CN,Beijing,11
+China,CN,Tianjin,12
+China,CN,Hebei,13
+China,CN,Shanxi,14
+China,CN,Nei Mongol,15
+China,CN,Liaoning,21
+China,CN,Jilin,22
+China,CN,Heilongjiang,23
+China,CN,Shanghai,31
+China,CN,Jiangsu,32
+China,CN,Zhejiang,33
+China,CN,Anhui,34
+China,CN,Fujian,35
+China,CN,Jiangxi,36
+China,CN,Shandong,37
+China,CN,Henan,41
+China,CN,Hubei,42
+China,CN,Hunan,43
+China,CN,Guangdong,44
+China,CN,Guangxi,45
+China,CN,Hainan,46
+China,CN,Chongqing,50
+China,CN,Sichuan,51
+China,CN,Guizhou,52
+China,CN,Yunnan,53
+China,CN,Xizang,54
+China,CN,Shaanxi,61
+China,CN,Gansu,62
+China,CN,Qinghai,63
+China,CN,Ningxia,64
+China,CN,Xinjiang,65
+China,CN,Chinese Taipei,71
+China,CN,Hong Kong,91
+China,CN,Macao,92
+Ireland,IE,Clare,CE
+Ireland,IE,Cavan,CN
+Ireland,IE,Cork,CO
+Ireland,IE,Carlow,CW
+Ireland,IE,Dublin,D
+Ireland,IE,Donegal,DL
+Ireland,IE,Galway,G
+Ireland,IE,Kildare,KE
+Ireland,IE,Kilkenny,KK
+Ireland,IE,Kerry,KY
+Ireland,IE,Longford,LD
+Ireland,IE,Louth,LH
+Ireland,IE,Limerick,LK
+Ireland,IE,Leitrim,LM
+Ireland,IE,Laois,LS
+Ireland,IE,Meath,MH
+Ireland,IE,Monaghan,MN
+Ireland,IE,Mayo,MO
+Ireland,IE,Offaly,OY
+Ireland,IE,Roscommon,RN
+Ireland,IE,Sligo,SO
+Ireland,IE,Tipperary,TA
+Ireland,IE,Waterford,WD
+Ireland,IE,Westmeath,WH
+Ireland,IE,Wicklow,WW
+Ireland,IE,Wexford,WX
+India,IN,Andaman and Nicobar Islands,AN
+India,IN,Andhra Pradesh,AP
+India,IN,Arunachal Pradesh,AR
+India,IN,Assam,AS
+India,IN,Bihar,BR
+India,IN,Chandigarh,CH
+India,IN,Chhattisgarh,CT
+India,IN,Daman and Diu,DD
+India,IN,Delhi,DL
+India,IN,Dadra and Nagar Haveli,DN
+India,IN,Goa,GA
+India,IN,Gujarat,GJ
+India,IN,Himachal Pradesh,HP
+India,IN,Haryana,HR
+India,IN,Jharkhand,JH
+India,IN,Jammu and Kashmir,JK
+India,IN,Karnataka,KA
+India,IN,Kerala,KL
+India,IN,Lakshadweep,LD
+India,IN,Maharashtra,MH
+India,IN,Meghalaya,ML
+India,IN,Manipur,MN
+India,IN,Madhya Pradesh,MP
+India,IN,Mizoram,MZ
+India,IN,Nagaland,NL
+India,IN,Odisha,OR
+India,IN,Punjab,PB
+India,IN,Puducherry,PY
+India,IN,Rajasthan,RJ
+India,IN,Sikkim,SK
+India,IN,Tamil Nadu,TN
+India,IN,Tripura,TR
+India,IN,Uttar Pradesh,UP
+India,IN,Uttarakhand,UT
+India,IN,West Bengal,WB
+Italy ,IT,Agrigento,AG
+Italy ,IT,Alessandria,AL
+Italy ,IT,Ancona,AN
+Italy ,IT,Aosta,AO
+Italy ,IT,Ascoli Piceno,AP
+Italy ,IT,L'Aquila,AQ
+Italy ,IT,Arezzo,AR
+Italy ,IT,Asti,AT
+Italy ,IT,Avellino,AV
+Italy ,IT,Bari,BA
+Italy ,IT,Bergamo,BG
+Italy ,IT,Biella,BI
+Italy ,IT,Belluno,BL
+Italy ,IT,Benevento,BN
+Italy ,IT,Bologna,BO
+Italy ,IT,Brindisi,BR
+Italy ,IT,Brescia,BS
+Italy ,IT,Barletta-Andria-Trani,BT
+Italy ,IT,Bolzano,BZ
+Italy ,IT,Cagliari,CA
+Italy ,IT,Campobasso,CB
+Italy ,IT,Caserta,CE
+Italy ,IT,Chieti,CH
+Italy ,IT,Carbonia-Iglesias,CI
+Italy ,IT,Caltanissetta,CL
+Italy ,IT,Cuneo,CN
+Italy ,IT,Como,CO
+Italy ,IT,Cremona,CR
+Italy ,IT,Cosenza,CS
+Italy ,IT,Catania,CT
+Italy ,IT,Catanzaro,CZ
+Italy ,IT,Enna,EN
+Italy ,IT,Forlì-Cesena,FC
+Italy ,IT,Ferrara,FE
+Italy ,IT,Foggia,FG
+Italy ,IT,Florence,FI
+Italy ,IT,Fermo,FM
+Italy ,IT,Frosinone,FR
+Italy ,IT,Genoa,GE
+Italy ,IT,Gorizia,GO
+Italy ,IT,Grosseto,GR
+Italy ,IT,Imperia,IM
+Italy ,IT,Isernia,IS
+Italy ,IT,Crotone,KR
+Italy ,IT,Lecco,LC
+Italy ,IT,Lecce,LE
+Italy ,IT,Livorno,LI
+Italy ,IT,Lodi,LO
+Italy ,IT,Latina,LT
+Italy ,IT,Lucca,LU
+Italy ,IT,Monza and Brianza,MB
+Italy ,IT,Macerata,MC
+Italy ,IT,Messina,ME
+Italy ,IT,Milan,MI
+Italy ,IT,Mantua,MN
+Italy ,IT,Modena,MO
+Italy ,IT,Massa and Carrara,MS
+Italy ,IT,Matera,MT
+Italy ,IT,Naples,NA
+Italy ,IT,Novara,NO
+Italy ,IT,Nuoro,NU
+Italy ,IT,Ogliastra,OG
+Italy ,IT,Oristano,OR
+Italy ,IT,Olbia-Tempio,OT
+Italy ,IT,Palermo,PA
+Italy ,IT,Piacenza,PC
+Italy ,IT,Padua,PD
+Italy ,IT,Pescara,PE
+Italy ,IT,Perugia,PG
+Italy ,IT,Pisa,PI
+Italy ,IT,Pordenone,PN
+Italy ,IT,Prato,PO
+Italy ,IT,Parma,PR
+Italy ,IT,Pistoia,PT
+Italy ,IT,Pesaro and Urbino,PU
+Italy ,IT,Pavia,PV
+Italy ,IT,Potenza,PZ
+Italy ,IT,Ravenna,RA
+Italy ,IT,Reggio Calabria,RC
+Italy ,IT,Reggio Emilia,RE
+Italy ,IT,Ragusa,RG
+Italy ,IT,Rieti,RI
+Italy ,IT,Rome,RM
+Italy ,IT,Rimini,RN
+Italy ,IT,Rovigo,RO
+Italy ,IT,Salerno,SA
+Italy ,IT,Siena,SI
+Italy ,IT,Sondrio,SO
+Italy ,IT,La Spezia,SP
+Italy ,IT,Syracuse,SR
+Italy ,IT,Sassari,SS
+Italy ,IT,Savona,SV
+Italy ,IT,Taranto,TA
+Italy ,IT,Teramo,TE
+Italy ,IT,Trento,TN
+Italy ,IT,Turin,TO
+Italy ,IT,Trapani,TP
+Italy ,IT,Terni,TR
+Italy ,IT,Trieste,TS
+Italy ,IT,Treviso,TV
+Italy ,IT,Udine,UD
+Italy ,IT,Varese,VA
+Italy ,IT,Verbano-Cusio-Ossola,VB
+Italy ,IT,Vercelli,VC
+Italy ,IT,Venice,VE
+Italy ,IT,Vicenza,VI
+Italy ,IT,Verona,VR
+Italy ,IT,Medio Campidano,VS
+Italy ,IT,Viterbo,VT
+Italy ,IT,Vibo Valentia,VV
+Mexico,MX,Aguascalientes,AG
+Mexico,MX,Baja California,BC
+Mexico,MX,Baja California Sur,BS
+Mexico,MX,Chihuahua,CH
+Mexico,MX,Colima,CL
+Mexico,MX,Campeche,CM
+Mexico,MX,Coahuila,CO
+Mexico,MX,Chiapas,CS
+Mexico,MX,Federal District,DF
+Mexico,MX,Durango,DG
+Mexico,MX,Guerrero,GR
+Mexico,MX,Guanajuato,GT
+Mexico,MX,Hidalgo,HG
+Mexico,MX,Jalisco,JA
+Mexico,MX,Mexico State,ME
+Mexico,MX,Michoacán,MI
+Mexico,MX,Morelos,MO
+Mexico,MX,Nayarit,NA
+Mexico,MX,Nuevo León,NL
+Mexico,MX,Oaxaca,OA
+Mexico,MX,Puebla,PB
+Mexico,MX,Querétaro,QE
+Mexico,MX,Quintana Roo,QR
+Mexico,MX,Sinaloa,SI
+Mexico,MX,San Luis Potosí,SL
+Mexico,MX,Sonora,SO
+Mexico,MX,Tabasco,TB
+Mexico,MX,Tlaxcala,TL
+Mexico,MX,Tamaulipas,TM
+Mexico,MX,Veracruz,VE
+Mexico,MX,Yucatán,YU
+Mexico,MX,Zacatecas,ZA
+United States,US,Armed Forces Americas,AA
+United States,US,Armed Forces Europe,AE
+United States,US,Alaska,AK
+United States,US,Alabama,AL
+United States,US,Armed Forces Pacific,AP
+United States,US,Arkansas,AR
+United States,US,American Samoa,AS
+United States,US,Arizona,AZ
+United States,US,California,CA
+United States,US,Colorado,CO
+United States,US,Connecticut,CT
+United States,US,District of Columbia,DC
+United States,US,Delaware,DE
+United States,US,Florida,FL
+United States,US,Federated Micronesia,FM
+United States,US,Georgia,GA
+United States,US,Guam,GU
+United States,US,Hawaii,HI
+United States,US,Iowa,IA
+United States,US,Idaho,ID
+United States,US,Illinois,IL
+United States,US,Indiana,IN
+United States,US,Kansas,KS
+United States,US,Kentucky,KY
+United States,US,Louisiana,LA
+United States,US,Massachusetts,MA
+United States,US,Maryland,MD
+United States,US,Maine,ME
+United States,US,Marshall Islands,MH
+United States,US,Michigan,MI
+United States,US,Minnesota,MN
+United States,US,Missouri,MO
+United States,US,Northern Mariana Islands,MP
+United States,US,Mississippi,MS
+United States,US,Montana,MT
+United States,US,North Carolina,NC
+United States,US,North Dakota,ND
+United States,US,Nebraska,NE
+United States,US,New Hampshire,NH
+United States,US,New Jersey,NJ
+United States,US,New Mexico,NM
+United States,US,Nevada,NV
+United States,US,New York,NY
+United States,US,Ohio,OH
+United States,US,Oklahoma,OK
+United States,US,Oregon,OR
+United States,US,Pennsylvania,PA
+United States,US,Puerto Rico,PR
+United States,US,Palau,PW
+United States,US,Rhode Island,RI
+United States,US,South Carolina,SC
+United States,US,South Dakota,SD
+United States,US,Tennessee,TN
+United States,US,Texas,TX
+United States,US,United States Minor Outlying Islands,UM
+United States,US,Utah,UT
+United States,US,Virginia,VA
+United States,US,US Virgin Islands,VI
+United States,US,Vermont,VT
+United States,US,Washington,WA
+United States,US,Wisconsin,WI
+United States,US,West Virginia,WV
+United States,US,Wyoming,WY
+Andorra,AD,-,
+United Arab Emirates,AE,-,
+Afghanistan,AF,-,
+Antigua and Barbuda,AG,-,
+Anguilla,AI,-,
+Albania,AL,-,
+Armenia,AM,-,
+Angola,AO,-,
+Antarctica,AQ,-,
+Argentina,AR,-,
+Austria,AT,-,
+Aruba,AW,-,
+Aland Islands,AX,-,
+Azerbaijan,AZ,-,
+Bosnia and Herzegovina,BA,-,
+Barbados,BB,-,
+Bangladesh,BD,-,
+Belgium,BE,-,
+Burkina Faso,BF,-,
+Bulgaria,BG,-,
+Bahrain,BH,-,
+Burundi,BI,-,
+Benin,BJ,-,
+Saint Barthélemy,BL,-,
+Bermuda,BM,-,
+Brunei Darussalam,BN,-,
+"Bolivia, Plurinational State of",BO,-,
+"Bonaire, Sint Eustatius and Saba",BQ,-,
+Bahamas,BS,-,
+Bhutan,BT,-,
+Bouvet Island,BV,-,
+Botswana,BW,-,
+Belarus,BY,-,
+Belize,BZ,-,
+Cocos (Keeling) Islands,CC,-,
+"Congo, the Democratic Republic of the",CD,-,
+Central African Republic,CF,-,
+Congo,CG,-,
+Switzerland,CH,-,
+Cote d'Ivoire,CI,-,
+Cook Islands,CK,-,
+Chile,CL,-,
+Cameroon,CM,-,
+Colombia,CO,-,
+Costa Rica,CR,-,
+Cuba,CU,-,
+Cape Verde,CV,-,
+Curaçao,CW,-,
+Christmas Island,CX,-,
+Cyprus,CY,-,
+Czech Republic,CZ,-,
+Germany,DE,-,
+Djibouti,DJ,-,
+Denmark,DK,-,
+Dominica,DM,-,
+Dominican Republic,DO,-,
+Algeria,DZ,-,
+Ecuador,EC,-,
+Estonia,EE,-,
+Egypt,EG,-,
+Western Sahara,EH,-,
+Eritrea,ER,-,
+Spain,ES,-,
+Ethiopia,ET,-,
+Finland,FI,-,
+Fiji,FJ,-,
+Falkland Islands (Malvinas),FK,-,
+Faroe Islands,FO,-,
+France,FR,-,
+Gabon,GA,-,
+United Kingdom,GB,-,
+Grenada,GD,-,
+Georgia,GE,-,
+French Guiana,GF,-,
+Guernsey,GG,-,
+Ghana,GH,-,
+Gibraltar,GI,-,
+Greenland,GL,-,
+Gambia,GM,-,
+Guinea,GN,-,
+Guadeloupe,GP,-,
+Equatorial Guinea,GQ,-,
+Greece,GR,-,
+South Georgia and the South Sandwich Islands,GS,-,
+Guatemala,GT,-,
+Guinea-Bissau,GW,-,
+Guyana,GY,-,
+Heard Island and McDonald Islands,HM,-,
+Honduras,HN,-,
+Croatia,HR,-,
+Haiti,HT,-,
+Hungary,HU,-,
+Indonesia,ID,-,
+Israel,IL,-,
+Isle of Man,IM,-,
+British Indian Ocean Territory,IO,-,
+Iraq,IQ,-,
+"Iran, Islamic Republic of",IR,-,
+Iceland,IS,-,
+Jersey,JE,-,
+Jamaica,JM,-,
+Jordan,JO,-,
+Japan,JP,-,
+Kenya,KE,-,
+Kyrgyzstan,KG,-,
+Cambodia,KH,-,
+Kiribati,KI,-,
+Comoros,KM,-,
+Saint Kitts and Nevis,KN,-,
+"Korea, Democratic People's Republic of",KP,-,
+"Korea, Republic of",KR,-,
+Kuwait,KW,-,
+Cayman Islands,KY,-,
+Kazakhstan,KZ,-,
+Lao People's Democratic Republic,LA,-,
+Lebanon,LB,-,
+Saint Lucia,LC,-,
+Liechtenstein,LI,-,
+Sri Lanka,LK,-,
+Liberia,LR,-,
+Lesotho,LS,-,
+Lithuania,LT,-,
+Luxembourg,LU,-,
+Latvia,LV,-,
+Libyan Arab Jamahiriya,LY,-,
+Morocco,MA,-,
+Monaco,MC,-,
+"Moldova, Republic of",MD,-,
+Montenegro,ME,-,
+Saint Martin (French part),MF,-,
+Madagascar,MG,-,
+"Macedonia, the former Yugoslav Republic of",MK,-,
+Mali,ML,-,
+Myanmar,MM,-,
+Mongolia,MN,-,
+Macao,MO,-,
+Martinique,MQ,-,
+Mauritania,MR,-,
+Montserrat,MS,-,
+Malta,MT,-,
+Mauritius,MU,-,
+Maldives,MV,-,
+Malawi,MW,-,
+Malaysia,MY,-,
+Mozambique,MZ,-,
+Namibia,NA,-,
+New Caledonia,NC,-,
+Niger,NE,-,
+Norfolk Island,NF,-,
+Nigeria,NG,-,
+Nicaragua,NI,-,
+Netherlands,NL,-,
+Norway,NO,-,
+Nepal,NP,-,
+Nauru,NR,-,
+Niue,NU,-,
+New Zealand,NZ,-,
+Oman,OM,-,
+Panama,PA,-,
+Peru,PE,-,
+French Polynesia,PF,-,
+Papua New Guinea,PG,-,
+Philippines,PH,-,
+Pakistan,PK,-,
+Poland,PL,-,
+Saint Pierre and Miquelon,PM,-,
+Pitcairn,PN,-,
+"Palestinian Territory, Occupied",PS,-,
+Portugal,PT,-,
+Paraguay,PY,-,
+Qatar,QA,-,
+Reunion,RE,-,
+Romania,RO,-,
+Serbia,RS,-,
+Russian Federation,RU,-,
+Rwanda,RW,-,
+Saudi Arabia,SA,-,
+Solomon Islands,SB,-,
+Seychelles,SC,-,
+Sudan,SD,-,
+Sweden,SE,-,
+Singapore,SG,-,
+"Saint Helena, Ascension and Tristan da Cunha",SH,-,
+Slovenia,SI,-,
+Svalbard and Jan Mayen,SJ,-,
+Slovakia,SK,-,
+Sierra Leone,SL,-,
+San Marino,SM,-,
+Senegal,SN,-,
+Somalia,SO,-,
+Suriname,SR,-,
+South Sudan,SS,-,
+Sao Tome and Principe,ST,-,
+El Salvador,SV,-,
+Sint Maarten (Dutch part),SX,-,
+Syrian Arab Republic,SY,-,
+Swaziland,SZ,-,
+Turks and Caicos Islands,TC,-,
+Chad,TD,-,
+French Southern Territories,TF,-,
+Togo,TG,-,
+Thailand,TH,-,
+Tajikistan,TJ,-,
+Tokelau,TK,-,
+Timor-Leste,TL,-,
+Turkmenistan,TM,-,
+Tunisia,TN,-,
+Tonga,TO,-,
+Turkey,TR,-,
+Trinidad and Tobago,TT,-,
+Tuvalu,TV,-,
+Chinese Taipei,TW,-,
+"Tanzania, United Republic of",TZ,-,
+Ukraine,UA,-,
+Uganda,UG,-,
+Uruguay,UY,-,
+Uzbekistan,UZ,-,
+Holy See (Vatican City State),VA,-,
+Saint Vincent and the Grenadines,VC,-,
+"Venezuela, Bolivarian Republic of",VE,-,
+"Virgin Islands, British",VG,-,
+Viet Nam,VN,-,
+Vanuatu,VU,-,
+Wallis and Futuna,WF,-,
+Samoa,WS,-,
+Yemen,YE,-,
+Mayotte,YT,-,
+South Africa,ZA,-,
+Zambia,ZM,-,
+Zimbabwe,ZW,-,
