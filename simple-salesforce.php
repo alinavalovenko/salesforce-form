@@ -61,9 +61,10 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 				'returl' => '#',
 			), $atts );
 
-			$form_content = $this->get_salesforce_form_html( $atts['action'], $atts['oid'], $atts['returl'] );
+			$form_content = $this->replace_form_parameters( $atts['action'], $atts['oid'], $atts['returl'] );
+			$form         = $this->set_up_dropdown_lists( $form_content );
 			ob_start();
-			echo $form_content;
+			echo $form;
 			$output = ob_get_contents();
 			ob_end_clean();
 
@@ -77,7 +78,7 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 		 *
 		 * @return false|string
 		 */
-		public function get_salesforce_form_html( $action = '#', $oid = '#', $retUrl = '#' ) {
+		public function replace_form_parameters( $action = '#', $oid = '#', $retUrl = '#' ) {
 			$action_pattern = '/action=\"(.*?)\"/';
 			$oid_pattern    = '/name="oid"[\s]*value=\"(.*?)\"/';
 			$retUrl_pattern = '/name="retURL"[\s]*value=\"(.*?)\"/';
@@ -98,7 +99,31 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 				preg_match_all( $retUrl_pattern, $form, $retUrl_matches );
 				$form = str_replace( $retUrl_matches[1][0], $retUrl, $form );
 			}
+			$form = str_replace( '&#39;', '\'', $form ); // replace utf symbols
 
+			return $form;
+		}
+
+		public function set_up_dropdown_lists( $form ) {
+			$csv = array_map( 'str_getcsv', file( SSF_TEMP . 'CountryStateMetadata.csv' ) );
+			foreach ( $csv as $item ) {
+				$state_code = $item[3];
+				if ( 'State Code' !== $state_code ) {
+					$state_name     = $item[2];
+					$country_code   = $item[1];
+					$option_pattern = "/<option[\s+]value=\"$state_code\">$state_name<\/option>/";
+					preg_match_all( $option_pattern, $form, $matches );
+					$new_option = '<option value="' . $state_code . '" class="' . $country_code . '">' . $state_name . '</option>';
+					if ( isset( $matches[0][0] ) && ! empty( $matches[0][0] ) ) {
+						$form = str_replace( $matches[0][0], $new_option, $form );
+					} else {
+						continue;
+					}
+				} else {
+					continue;
+				}
+
+			}
 
 			return $form;
 		}
