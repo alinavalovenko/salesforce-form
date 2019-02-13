@@ -70,6 +70,7 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 		public function ssf_enqueue_scripts() {
 			wp_enqueue_style( 'ssf-style', plugin_dir_url( __FILE__ ) . 'assets/styles.css' );
 			wp_enqueue_script( 'ssf-jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', '', '1.0.0', true );
+			wp_enqueue_script( 'ssf-validation', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js', array('ssf-jquery'), '1.0.0', true );
 			wp_enqueue_script( 'ssf-scripts', plugin_dir_url( __FILE__ ) . 'assets/scripts.js', array( 'ssf-jquery' ), '1.0.0', true );
 		}
 
@@ -130,7 +131,8 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 				}
 				$form = str_replace( '&#39;', '\'', $form ); // replace utf symbols
 				$form = str_replace( 'id="state_code"', 'id="state_code_parent"', $form ); // replace utf symbols
-				$form = str_replace( 'name="state_code"', 'name="state_code_parent"', $form ); // replace utf symbols
+				$form = str_replace( 'name="state_code"', 'name="state_code_parent"', $form ); // replace states list class and id
+				$form = str_replace( '<form', '<form id="av-ssf-form"', $form ); // replace states list class and id
 
 				return $form;
 			} else
