@@ -1,3 +1,7 @@
-#state_code_parent, label[for='state_code'], #state_code{
-display: none;
+label[for='state_code'], #state_code {
+    display: none;
+}
+
+#state_code_parent {
+    display: none !important;
 }
