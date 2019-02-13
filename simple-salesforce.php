@@ -48,6 +48,9 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 			) );
 		}
 
+		/***
+		 * Add ability to set up salesforce form in wp admin panel
+		 */
 		public function ssf_create_admin_page() {
 			if ( isset($_POST['save-ssf-form'])) {
 				$form_content = trim($_POST['ssf-content']);
@@ -96,6 +99,8 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 		}
 
 		/***
+		 * Replace form fields value with shortcode parameters
+		 *
 		 * @param string $action
 		 * @param string $oid
 		 * @param string $retUrl
@@ -130,6 +135,13 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 			return $form;
 		}
 
+		/***
+		 * Add class to states list options to identify country
+		 *
+		 * @param $form
+		 *
+		 * @return mixed
+		 */
 		public function set_up_dropdown_lists( $form ) {
 			$csv = array_map( 'str_getcsv', file( SSF_TEMP . 'CountryStateMetadata.csv' ) );
 			foreach ( $csv as $item ) {
