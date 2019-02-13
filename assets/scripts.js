@@ -1,19 +1,28 @@
 jQuery(document).ready(function ($) {
     var countriesList = $('#country_code');
-    var statesList = $('#state_code');
+    var statesList = $('#state_code_parent');
+    var statesListLabel =  statesList.prev('label');
 
-    statesList.prev('label').hide();
-    statesList.hide();
+    //create new select with correct id
+    var newStatesList = $("<select id='state_code' name='state_code'></select>");
+
 
     countriesList.change(function () {
-        var selectedCountry = this.value;
-        $("#state_code > option").each(function() {
-            if($(selectedCountry) !== this.className){
-              //to do magic
+        // clean newStatesList
+        newStatesList[0].options.length = 0;
+        newStatesList.append('<option value="">--None--</option>');
+        let selectedCountry = this.value;
+        console.log(statesList[0].options.length);
+        for (let i = 1; i < statesList[0].options.length; i++) {
+            if (selectedCountry === statesList[0].options[i].className) {
+                //console.log(statesList[0].options[i]);
+                newStatesList.append(statesList[0].options[i]);
             }
-        });
-        statesList.prev('label').show();
-        statesList.show();
+        }
+        if(1 !== newStatesList[0].options.length) {
+            statesListLabel.show();
+            statesListLabel.after(newStatesList);
+        }
     });
 
 });

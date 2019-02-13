@@ -100,6 +100,8 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 				$form = str_replace( $retUrl_matches[1][0], $retUrl, $form );
 			}
 			$form = str_replace( '&#39;', '\'', $form ); // replace utf symbols
+			$form = str_replace( 'id="state_code"', 'id="state_code_parent"', $form ); // replace utf symbols
+			$form = str_replace( 'name="state_code"', 'name="state_code_parent"', $form ); // replace utf symbols
 
 			return $form;
 		}
