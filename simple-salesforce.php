@@ -19,6 +19,7 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 			register_activation_hook( plugin_basename( __FILE__ ), array( $this, 'ssf_activate' ) );
 			register_deactivation_hook( plugin_basename( __FILE__ ), array( $this, 'ssf_deactivate' ) );
 			register_uninstall_hook( plugin_basename( __FILE__ ), 'ssf_uninstall' );
+			add_action( 'admin_menu', array( $this, 'ssf_add_admin_page' ) );
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'ssf_enqueue_scripts' ) );
 
@@ -35,6 +36,29 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 		}
 
 		public function ssf_uninstall() {
+		}
+
+		/***
+		 * Create Plugin Page for Plugin
+		 */
+		public function ssf_add_admin_page() {
+			add_submenu_page( 'tools.php', 'Simple Salesforce Form', 'Salesforce Form', 'manage_options', 'simple-salesforce-form', array(
+				$this,
+				'ssf_create_admin_page'
+			) );
+		}
+
+		public function ssf_create_admin_page() {
+			if ( isset($_POST['save-ssf-form'])) {
+				$form_content = trim($_POST['ssf-content']);
+				if(!empty($form_content)) {
+					$result = file_put_contents( SSF_TEMP . 'form.txt', $form_content );
+					if ( ! $result ) {
+						echo 'Something went wrong, please check permissions of the file ' . SSF_TEMP . 'form.txt or contact with a developer';
+					}
+				}
+			}
+			require_once 'dashboard.php';
 		}
 
 		/***
