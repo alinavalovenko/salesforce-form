@@ -52,10 +52,10 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 		 * Add ability to set up salesforce form in wp admin panel
 		 */
 		public function ssf_create_admin_page() {
-			if ( isset($_POST['save-ssf-form'])) {
-				$form_content = trim($_POST['ssf-content']);
-				if(!empty($form_content)) {
-					$result = file_put_contents( SSF_TEMP . 'form.txt', $form_content );
+			if ( isset( $_POST['save-ssf-form'] ) ) {
+				$form_content = $_FILES['ssf-content'];
+				if ( ! empty( $form_content ) ) {
+					$result = move_uploaded_file( $form_content["tmp_name"], SSF_TEMP . 'form.txt' );
 					if ( ! $result ) {
 						echo 'Something went wrong, please check permissions of the file ' . SSF_TEMP . 'form.txt or contact with a developer';
 					}
@@ -113,26 +113,28 @@ if ( ! class_exists( 'Simple_Salesforce_Form' ) ) {
 			$retUrl_pattern = '/name="retURL"[\s]*value=\"(.*?)\"/';
 
 			$form = file_get_contents( SSF_TEMP . 'form.txt' ) or die( 'Unable to open file ' . SSF_TEMP . 'form.txt' );
+			if ( ! empty( trim( $form ) ) ) {
+				if ( '#' !== $action ) {
+					preg_match_all( $action_pattern, $form, $action_matches );
+					$form = str_replace( $action_matches[1][0], $action, $form );
+				}
 
-			if ( '#' !== $action ) {
-				preg_match_all( $action_pattern, $form, $action_matches );
-				$form = str_replace( $action_matches[1][0], $action, $form );
-			}
+				if ( '#' !== $oid ) {
+					preg_match_all( $oid_pattern, $form, $oid_matches );
+					$form = str_replace( $oid_matches[1][0], $oid, $form );
+				}
 
-			if ( '#' !== $oid ) {
-				preg_match_all( $oid_pattern, $form, $oid_matches );
-				$form = str_replace( $oid_matches[1][0], $oid, $form );
-			}
+				if ( '#' !== $retUrl ) {
+					preg_match_all( $retUrl_pattern, $form, $retUrl_matches );
+					$form = str_replace( $retUrl_matches[1][0], $retUrl, $form );
+				}
+				$form = str_replace( '&#39;', '\'', $form ); // replace utf symbols
+				$form = str_replace( 'id="state_code"', 'id="state_code_parent"', $form ); // replace utf symbols
+				$form = str_replace( 'name="state_code"', 'name="state_code_parent"', $form ); // replace utf symbols
 
-			if ( '#' !== $retUrl ) {
-				preg_match_all( $retUrl_pattern, $form, $retUrl_matches );
-				$form = str_replace( $retUrl_matches[1][0], $retUrl, $form );
-			}
-			$form = str_replace( '&#39;', '\'', $form ); // replace utf symbols
-			$form = str_replace( 'id="state_code"', 'id="state_code_parent"', $form ); // replace utf symbols
-			$form = str_replace( 'name="state_code"', 'name="state_code_parent"', $form ); // replace utf symbols
-
-			return $form;
+				return $form;
+			} else
+				return false;
 		}
 
 		/***
